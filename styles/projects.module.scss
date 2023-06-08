@@ -1,0 +1,30 @@
+.project {
+    margin-block-end: 2rem;
+}
+
+.image {
+    position: relative;
+    height: 270px;
+
+    & img {
+        position: absolute;
+        object-fit: cover;
+    }
+}
+
+.title {
+    color: var(--primary);
+    font-family: "Bebas Neue";
+    font-size: 1.5rem;
+}
+
+.divider {
+    border-color: var(--primary);
+    margin-block: .25rem .5rem;
+    width: 100px;
+}
+
+.tags {
+    color: var(--text-secondary);
+    font-size: var(--font-sm);
+}

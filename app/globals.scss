@@ -1,13 +1,13 @@
 @use '@/styles/spacing.scss';
 
-/* COLORS */
 :root {
   --primary: #F15B1B;
   --body-text-color: #fff;
-  --text-secondary: #aaa;
-}
+  --text-secondary: #777;
+  --progress-bar: #ccc;
 
-/* END OF COLORS */
+  --font-sm: .8rem;
+}
 
 @media (prefers-color-scheme: dark) {
   // :root {}
@@ -26,7 +26,6 @@
 body {
   color: #fff;
   background-color: #050A08;
-  font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 
@@ -39,7 +38,8 @@ section {
 }
 
 h1,
-h2 {
+h2,
+.section_title {
   font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -60,6 +60,21 @@ a {
   display: inline-block;
 }
 
+img {
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-block-end: .4rem;
+}
+
+
 /* OTHER STYLES */
 .btn {
   border: none;
@@ -72,4 +87,8 @@ a {
 .section_title {
   color: var(--primary);
   margin-block-end: 2rem;
+}
+
+h3.section_title {
+  margin-block-end: 1rem;
 }

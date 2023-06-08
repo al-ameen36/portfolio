@@ -4,7 +4,7 @@
 
     & .item {
         border-left: 2px solid var(--text-secondary);
-        font-size: 14px;
+        font-size: var(--font-sm);
         padding-block-end: 1.3rem;
         padding-inline-start: 1rem;
         position: relative;
@@ -15,10 +15,9 @@
     }
 
     & h3 {
-        font-size: inherit;
+        font-size: 1.2em;
         color: var(--body-text-color);
         font-weight: 500;
-        font-size: 1.2em;
         margin-block-end: .4rem;
     }
 }
