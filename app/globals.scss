@@ -4,13 +4,13 @@
 :root {
   --primary: #F15B1B;
   --body-text-color: #fff;
-  --text-secondary: #bbb;
+  --text-secondary: #aaa;
 }
 
 /* END OF COLORS */
 
 @media (prefers-color-scheme: dark) {
-  :root {}
+  // :root {}
 
   html {
     color-scheme: dark;
@@ -27,7 +27,7 @@ body {
   color: #fff;
   background-color: #050A08;
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 main {
