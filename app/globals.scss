@@ -1,12 +1,13 @@
 @use '@/styles/spacing.scss';
 
 :root {
-  --primary: #F15B1B;
+  --primary: #ff6a2a;
   --body-text-color: #fff;
   --text-secondary: #777;
   --progress-bar: #ccc;
 
   --font-sm: .8rem;
+  --heading-letter-spacing: 1.3px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,6 +87,7 @@ li {
 
 .section_title {
   color: var(--primary);
+  letter-spacing: var(--heading-letter-spacing);
   margin-block-end: 2rem;
 }
 
