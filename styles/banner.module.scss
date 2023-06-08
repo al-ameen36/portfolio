@@ -1,0 +1,55 @@
+@use "spacing.scss";
+
+.banner {
+    display: grid;
+    padding-block-start: 20vh;
+    padding-block-end: 15vh;
+    place-items: center;
+
+    & .heading {
+        color: var(--primary);
+        font-size: 4rem;
+        line-height: .85;
+        text-align: center;
+        width: min-content;
+    }
+
+    & .job_title {
+        margin-block-start: spacing.$spacing_subheading;
+        margin-block-end: spacing.$spacing_2;
+
+        & span {
+            text-transform: capitalize;
+        }
+
+        & span:first-child {
+            display: block;
+        }
+    }
+
+    & .ampasand {
+        margin-right: 4px;
+        font-weight: 700;
+    }
+
+    & .actions {
+        display: grid;
+        justify-items: center;
+        row-gap: 1rem;
+
+        & button {
+            text-transform: capitalize;
+        }
+
+        & button:first-child {
+            display: block;
+            margin-block-end: .5rem;
+            width: 200px;
+        }
+    }
+
+    #contact_btn {
+        background-color: var(--primary);
+        color: var(--body-color)
+    }
+}

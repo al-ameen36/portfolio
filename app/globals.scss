@@ -1,4 +1,13 @@
-:root {}
+@use '@/styles/spacing.scss';
+
+/* COLORS */
+:root {
+  --primary: #F15B1B;
+  --body-text-color: #fff;
+  --text-secondary: #bbb;
+}
+
+/* END OF COLORS */
 
 @media (prefers-color-scheme: dark) {
   :root {}
@@ -21,6 +30,14 @@ body {
   font-size: 15px;
 }
 
+main {
+  padding-inline: spacing.$spacing_1;
+}
+
+section {
+  margin-block-end: 4rem;
+}
+
 h1,
 h2 {
   font-family: 'Bebas Neue', sans-serif;
@@ -41,4 +58,18 @@ button,
 a {
   font-family: inherit;
   display: inline-block;
+}
+
+/* OTHER STYLES */
+.btn {
+  border: none;
+  display: inline-block;
+  width: 100%;
+  padding-inline: 2rem;
+  padding-block: .6rem;
+}
+
+.section_title {
+  color: var(--primary);
+  margin-block-end: 2rem;
 }

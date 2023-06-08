@@ -1,0 +1,18 @@
+@use 'spacing.scss';
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    & a {
+        padding: spacing.$spacing_1;
+    }
+
+    & input[type*=checkbox] {
+        margin: spacing.$spacing_1;
+    }
+
+    &_brand {
+        font-weight: 700;
+    }
+}
