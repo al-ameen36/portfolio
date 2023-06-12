@@ -1,9 +1,25 @@
+@use "layout.scss";
+
 .skills {
+    @include layout.device(desktop) {
+        grid-area: skills;
+    }
+
     & h3 {
         font-size: 1rem;
         font-weight: 400;
     }
 
+    &_list {
+        display: grid;
+        margin-block-start: 3rem;
+        row-gap: 2rem;
+
+        @include layout.device(desktop) {
+            column-gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 }
 
 .skill_progress {
@@ -27,8 +43,4 @@
         height: 100%;
         width: 90%;
     }
-}
-
-.skill_list {
-    margin-block-start: 3rem;
 }

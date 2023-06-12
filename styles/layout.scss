@@ -1,0 +1,11 @@
+$main-content-size: 850px;
+$section-col-gap: 4rem;
+$section-row-gap: 4rem;
+
+@mixin device ($breakpoint) {
+    @if $breakpoint ==desktop {
+        @media only screen and (min-width: 700px) {
+            @content;
+        }
+    }
+}

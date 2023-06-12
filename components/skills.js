@@ -13,27 +13,29 @@ export default function Skills() {
                 <div className={skillStyles.progress}><div></div></div>
                 <span>Always room for improvement</span>
             </div>
-            <div className={skillStyles.skill_list}>
-                <h3 className="section_title">Great experience with</h3>
-                <ul>
-                    <li>HTML, CSS & JavaScript</li>
-                    <li>Sass & Bootstrap</li>
-                    <li>NodeJs</li>
-                    <li>ReactJs & NextJs</li>
-                    <li>Prisma</li>
-                    <li>SQL & MariaDB (XAMPP)</li>
-                    <li>Git & Github</li>
-                </ul>
-            </div>
-            <div className={skillStyles.skill_list}>
-                <h3 className="section_title">Some experience with</h3>
-                <ul>
-                    <li>Python & Django Framework</li>
-                    <li>PHP</li>
-                    <li>Postgresql</li>
-                    <li>MongoDB</li>
-                    <li>D3Js</li>
-                </ul>
+            <div className={skillStyles.skills_list}>
+                <div className={skillStyles.skill_list}>
+                    <h3 className="section_title">Great experience with</h3>
+                    <ul>
+                        <li>HTML, CSS & JavaScript</li>
+                        <li>Sass & Bootstrap</li>
+                        <li>NodeJs</li>
+                        <li>ReactJs & NextJs</li>
+                        <li>Prisma</li>
+                        <li>SQL & MariaDB (XAMPP)</li>
+                        <li>Git & Github</li>
+                    </ul>
+                </div>
+                <div className={skillStyles.skill_list}>
+                    <h3 className="section_title">Some experience with</h3>
+                    <ul>
+                        <li>Python & Django Framework</li>
+                        <li>PHP</li>
+                        <li>Postgresql</li>
+                        <li>MongoDB</li>
+                        <li>D3Js</li>
+                    </ul>
+                </div>
             </div>
         </section>
     )

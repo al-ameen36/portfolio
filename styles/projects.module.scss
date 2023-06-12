@@ -1,5 +1,18 @@
-.project {
-    margin-block-end: 2rem;
+@use "layout.scss";
+
+.projects {
+    @include layout.device(desktop) {
+        grid-area: projects;
+    }
+}
+
+.projects_list {
+    display: grid;
+    grid-gap: 2rem;
+
+    @include layout.device(desktop) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .image {

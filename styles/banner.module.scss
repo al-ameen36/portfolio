@@ -1,6 +1,11 @@
 @use "spacing.scss";
+@use "layout.scss";
 
 .banner {
+    @include layout.device(desktop) {
+        grid-area: banner;
+    }
+
     display: grid;
     padding-block-start: 20vh;
     padding-block-end: 15vh;

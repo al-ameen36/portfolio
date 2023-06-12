@@ -1,4 +1,5 @@
 @use '@/styles/spacing.scss';
+@use '@/styles/layout.scss';
 
 :root {
   --primary: #ff6a2a;
@@ -32,11 +33,22 @@ body {
 }
 
 main {
+  display: grid;
+  margin-block: layout.$section-row-gap;
+  margin-inline: auto;
+  max-width: layout.$main-content-size;
   padding-inline: spacing.$spacing_1;
-}
+  row-gap: layout.$section-row-gap;
 
-section {
-  margin-block-end: 4rem;
+  @include layout.device(desktop) {
+    column-gap: layout.$section-col-gap;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "banner banner"
+      "about education"
+      "skills skills"
+      "projects projects";
+  }
 }
 
 h1,
@@ -58,8 +70,8 @@ a {
 
 button,
 a {
-  font-family: inherit;
   display: inline-block;
+  font-family: inherit;
 }
 
 img {
@@ -76,14 +88,13 @@ li {
   margin-block-end: .4rem;
 }
 
-
 /* OTHER STYLES */
 .btn {
   border: none;
   display: inline-block;
-  width: 100%;
   padding-inline: 2rem;
   padding-block: .6rem;
+  width: 100%;
 }
 
 .section_title {
