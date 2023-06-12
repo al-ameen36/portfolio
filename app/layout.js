@@ -1,11 +1,10 @@
 import Link from 'next/link'
 import './globals.scss'
 import navStyles from '@/styles/nav.module.scss'
-import { Bebas_Neue, Montserrat, Dosis } from 'next/font/google'
+import { Bebas_Neue, Montserrat } from 'next/font/google'
 
 const bebas = Bebas_Neue({ subsets: ['latin'], weight: '400' })
 const montserrat = Montserrat({ subsets: ['latin'] })
-const dosis = Dosis({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Muhammad Al-Ameen\'s portfolio',

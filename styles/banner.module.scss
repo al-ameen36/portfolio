@@ -4,6 +4,8 @@
 .banner {
     @include layout.device(desktop) {
         grid-area: banner;
+        padding-block-start: 10vh;
+        padding-block-end: 5vh;
     }
 
     display: grid;
@@ -12,14 +14,21 @@
     place-items: center;
 
     & .heading {
+        @include layout.device(desktop) {
+            font-size: clamp(4rem, min(15vh, 15vw), 8rem);
+        }
+
         color: var(--primary);
-        font-size: 4rem;
         line-height: .85;
         text-align: center;
         width: min-content;
     }
 
     & .job_title {
+        @include layout.device(desktop) {
+            font-size: 1.4rem;
+        }
+
         margin-block-start: spacing.$spacing_subheading;
         margin-block-end: spacing.$spacing_2;
 
@@ -40,7 +49,7 @@
     & .actions {
         display: grid;
         justify-items: center;
-        row-gap: 1rem;
+        row-gap: spacing.$spacing_1;
 
         & button {
             text-transform: capitalize;
@@ -48,13 +57,21 @@
 
         & button:first-child {
             display: block;
-            margin-block-end: .5rem;
             width: 200px;
+        }
+
+        &_top {
+            display: grid;
+            gap: spacing.$spacing_1;
+
+            @include layout.device(desktop) {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     }
 
     #contact_btn {
         background-color: var(--primary);
-        color: var(--body-color)
+        color: var(--body-color);
     }
 }

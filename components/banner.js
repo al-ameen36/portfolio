@@ -11,7 +11,7 @@ export default function Banner() {
                 <span>database engineer</span>
             </div>
             <div className={bannerStyles.actions}>
-                <div>
+                <div className={bannerStyles.actions_top}>
                     <button id={bannerStyles.contact_btn} className='btn'>contact me</button>
                     <button className='btn'>download CV</button>
                 </div>
