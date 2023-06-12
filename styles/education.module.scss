@@ -1,8 +1,14 @@
+@use "layout.scss";
+
 .edu {
     text-transform: capitalize;
     color: var(--text-secondary);
 
     & .item {
+        @include layout.device(desktop) {
+            font-size: .9rem;
+        }
+
         border-left: 2px solid var(--text-secondary);
         font-size: var(--font-sm);
         padding-block-end: 1.3rem;

@@ -1,8 +1,15 @@
 @use 'spacing.scss';
+@use 'layout.scss';
 
 .nav {
+    @include layout.device(desktop) {
+        margin-block-start: min(2rem, 3vh, 3vw);
+    }
+
     display: flex;
     justify-content: space-between;
+    margin-inline: auto;
+    max-width: layout.$main-content-size;
 
     & a {
         padding: spacing.$spacing_1;
