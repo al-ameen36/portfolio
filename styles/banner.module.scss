@@ -14,10 +14,7 @@
     place-items: center;
 
     & .heading {
-        @include layout.device(desktop) {
-            font-size: clamp(4rem, min(15vh, 15vw), 8rem);
-        }
-
+        font-size: clamp(4rem, min(20vh, 20vw), 8rem);
         color: var(--primary);
         line-height: .85;
         text-align: center;
