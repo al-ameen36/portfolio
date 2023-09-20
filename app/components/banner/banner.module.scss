@@ -48,13 +48,10 @@
         justify-items: center;
         row-gap: spacing.$spacing_1;
 
-        & button {
+        & a {
             text-transform: capitalize;
-        }
-
-        & button:first-child {
-            display: block;
-            width: 200px;
+            text-align: center;
+            min-width: 200px;
         }
 
         &_top {

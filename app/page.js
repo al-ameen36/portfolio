@@ -4,7 +4,7 @@ import Education from "@/app/components/education/education";
 import Projects from "@/app/components/projects/projects";
 import Skills from "@/app/components/skills/skills";
 
-export default function Home() {
+export default async function Home() {
   return (
     <main>
       <Banner />

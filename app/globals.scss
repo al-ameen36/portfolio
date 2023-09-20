@@ -4,6 +4,8 @@
 :root {
   --primary: #ff6a2a;
   --body-text-color: #fff;
+  --button-color: #fbfbfb;
+  --button-text-color: #111;
   --text-secondary: #777;
   --heading-text-secondary: #c5c5c5;
   --progress-bar: #ccc;
@@ -90,8 +92,12 @@ li {
 
 /* OTHER STYLES */
 .btn {
+  background-color: var(--button-color);
   border: none;
+  border-radius: 3px;
+  color: var(--button-text-color);
   display: inline-block;
+  font-weight: 600;
   padding-inline: 2rem;
   padding-block: .6rem;
   width: 100%;
