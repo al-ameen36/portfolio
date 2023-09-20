@@ -1,6 +1,6 @@
 import Link from "next/link";
 import "./globals.scss";
-import navStyles from "@/styles/nav.module.scss";
+import navStyles from "./styles/nav.module.scss";
 import { Montserrat, Bebas_Neue } from "next/font/google";
 
 const bebas = Bebas_Neue({

@@ -1,5 +1,5 @@
-@use "spacing.scss";
-@use "layout.scss";
+@use "../../styles/spacing.scss";
+@use "../../styles/layout.scss";
 
 .banner {
     @include layout.device(desktop) {
